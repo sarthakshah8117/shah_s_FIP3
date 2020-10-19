@@ -1,0 +1,32 @@
+
+#aboutContent {
+    background-color: cadetblue;
+    
+}
+
+
+.AboutmeTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    ;
+    margin-top: 20px;
+
+    // background-color: azure;
+
+    p {
+        font-size: 28px;
+        color: black;
+        position: relative;
+
+    }
+}
+
+.AboutmeText {
+    p {
+        font-size: 18px;
+        text-align: justify;
+        letter-spacing: 2;
+        line-height: 2;
+    }
+}
