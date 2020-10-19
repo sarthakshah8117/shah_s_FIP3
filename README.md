@@ -14,9 +14,9 @@
 
 ## Description
 
-This is my portfolio piece. It is assigned as my course Final Integrated Project fall, 2020. This is my identity where i have displayed my work and skills.  
+This is my portfolio piece. It is assigned as course Final Integrated Project fall, 2020. This is my identity where i have displayed my work and skills. The link below will drive through the steps that are followed.  
 
-[Roadmap (steps followed for this project)](https://docs.google.com/document/d/1RdNh4iCbtOzZASNZpXU6q0sla9PBC0DufmcRBZzn1U4/edit)
+[Roadmap](https://docs.google.com/document/d/1YL0Rwm_6ZIpF-uMk887ElBv_TaUnrZ1gJTBQC7985Xc/edit)
 
 ### Technologies 
 
