@@ -60,6 +60,7 @@ body {
   letter-spacing: 3px;
   word-spacing: 10px;
   font-size: 0.8rem;
+  color: grey;
 }
 .text span {
   display: inline-block;
@@ -101,6 +102,7 @@ body {
   text-align: justify;
   letter-spacing: 2;
   line-height: 2;
+  color: black;
 }
 
 .html {
