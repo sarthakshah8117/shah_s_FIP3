@@ -16,7 +16,7 @@
 
     p {
         font-size: 28px;
-        color: black;
+        color: $black-color;
         position: relative;
 
     }
@@ -28,5 +28,6 @@
         text-align: justify;
         letter-spacing: 2;
         line-height: 2;
+        color: $black-color;
     }
 }

@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background-color: #252627;	
+	background-color: $body-bg-color;	
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
 	margin-top: 120px;
 
 	h1 {
-		color: #fff;
+		color: $white-color;
 		font-size: 3rem;
 		cursor: context-menu;
 	}
@@ -27,6 +27,7 @@ body {
 		letter-spacing: 3px;
 		word-spacing: 10px;
 		font-size: .8rem;
+		color: $grey-color;
 	}
 	
 	span {
@@ -34,7 +35,7 @@ body {
 
 
 		&:hover {
-			color: #48CFAB;
+			color: $Home-hover-Color;
 			transition: all .5s;
 		}
 
