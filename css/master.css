@@ -1,0 +1,145 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+nav ul, .main-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navbar {
+  background-color: #181818;
+}
+
+header a {
+  color: grey;
+}
+header li {
+  list-style: none;
+  margin-left: 30px;
+}
+header a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #252627;
+}
+
+.container {
+  padding: 0 100px 0 100px;
+}
+
+.main-info-section {
+  height: calc(100vh - 81.6px);
+}
+
+.text {
+  margin-top: 120px;
+}
+.text h1 {
+  color: #fff;
+  font-size: 3rem;
+  cursor: context-menu;
+}
+.text p {
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: 0.8rem;
+}
+.text span {
+  display: inline-block;
+}
+.text span:hover {
+  color: #48CFAB;
+  transition: all 0.5s;
+}
+.text span.name {
+  color: red;
+}
+.text span.m-left {
+  margin-left: -10px;
+}
+
+.profile-image img {
+  width: 450px;
+  margin-top: 50px;
+}
+
+#aboutContent {
+  background-color: cadetblue;
+}
+
+.AboutmeTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.AboutmeTitle p {
+  font-size: 28px;
+  color: black;
+  position: relative;
+}
+
+.AboutmeText p {
+  font-size: 18px;
+  text-align: justify;
+  letter-spacing: 2;
+  line-height: 2;
+}
+
+.html {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+div[class^=tag-] {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 100%, 0% 50%, 0% 0%);
+  width: 120px;
+  height: 30px;
+  background-color: #1785A7;
+  margin-right: 30px;
+}
+div[class^=tag-] p {
+  color: #fff;
+  text-align: center;
+  padding-left: 5px;
+  font-size: 1.1rem;
+  padding-top: 0px;
+}
+
+.progressbar {
+  position: relative;
+  width: 600px;
+  height: 20px;
+  border: 2px solid #48CFAD;
+  border-radius: 20px;
+  margin-top: 7px;
+}
+
+div[class^=bar-] {
+  position: relative;
+  background-color: #48CFAD;
+  height: 10px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=master.css.map */
