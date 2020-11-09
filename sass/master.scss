@@ -1,6 +1,13 @@
+@import 'modules/mediaqueries';
 @import 'modules/_var.scss';
 @import 'modules/_nav.scss';
 @import 'modules/_main.scss';
-@import 'modules/about.scss';
-@import 'modules/_progressBar.scss';
 
+// @import 'modules/about.scss';
+// @import 'modules/_progressBar.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
