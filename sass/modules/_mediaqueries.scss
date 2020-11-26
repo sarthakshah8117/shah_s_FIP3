@@ -1,37 +1,48 @@
-// @media (min-width: 800px) {
-//    body 
-//         {$--fs-h1: 4.5rem;
-//         $--fs-h2: 3.75rem;
-//         $--fs-h3: 1.5rem;
-//         $--fs-body: 1.125rem;
-//     } }
+@media (min-width: 800px) {
+  :root
+        {$--fs-h1: 4.5rem;
+        $--fs-h2: 3.75rem;
+        $--fs-h3: 5rem;
+        $--fs-body: 1.125rem;
+    }
+}
 
-//     @media (min-width: 600px) {
-//         .intro {
-//             display: grid;
-//             width: min-content;
-//             margin: 0 auto;
-//             grid-column-gap: 1em;
-//             grid-template-areas: 
-//                 "img title"
-//                 "img subtitle";
-//             grid-template-columns: min-content max-content;
-//         }
+    @media (min-width: 600px) {
+
+        .logo {
+            max-width: 200px;
+            padding-left: 3em;
+        }
+
+        .intro {
+            display: grid;
+            width: min-content;
+            margin: 0 auto;
+            grid-column-gap: 1em;
+            grid-template-areas: 
+                "img title"
+                "img subtitle";
+            grid-template-columns: min-content max-content;
+        }
         
-//         .intro__img {
-//             grid-area: img;
-//             min-width: 250px;
-//             position: relative;
-//             z-index: 5;
-//         }    
+        .intro__img {
+            grid-area: img;
+            min-width: 300px;
+            position: relative;
+            z-index: 5;
+        }    
         
-//         .section__subtitle--intro {
-//             align-self: start;
-//             grid-column: -1 / 1;
-//             grid-row: 2;
-//             text-align: right;
-//             position: relative;
-//             left: -1.5em;
-//             width: calc(100% + 1.5em);
-//         }
-//     }
+        .section__subtitle--intro {
+            align-self: start;
+            grid-column: -1 / 1;
+            grid-row: 2;
+            text-align: right;
+            position: relative;
+            left: -1.5em;
+            width: calc(100% + 1.5em);
+            font-size: $--fs-h3;
+            font-weight: $--fw-bold;
+        }
+    }
+
+

@@ -1,0 +1,36 @@
+.footer {
+    background-color: #111;
+    color: $--clr-accent;
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: $--fs-h3;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.sociallist__link:hover{
+    opacity: .8;
+}
+
+
+.sociallist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+
+}
+
+
+.scoiallist__item {
+    margin: 0 .5em;
+}
+
+.sociallist__link {
+    padding: .5em;
+}

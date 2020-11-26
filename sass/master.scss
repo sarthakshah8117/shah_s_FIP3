@@ -1,7 +1,13 @@
-@import 'modules/mediaqueries';
+
 @import 'modules/_var.scss';
 @import 'modules/_nav.scss';
 @import 'modules/_main.scss';
+@import 'modules/_progressbar.scss';
+@import 'modules/_about.scss';
+@import 'modules/_portfolio.scss';
+
+@import 'modules/_footer.scss';
+@import 'modules/mediaqueries';
 
 // @import 'modules/about.scss';
 // @import 'modules/_progressBar.scss';
@@ -10,4 +16,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }

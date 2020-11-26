@@ -7,6 +7,8 @@ body {
     line-height: 1.6;
 }
 
+
+
 section {
     padding: 5em 2em;
 }
@@ -19,6 +21,11 @@ img {
 strong {
     font-weight: $--fw-bold;
 }
+
+// :focus {
+//     outline: 3px solid $--clr-accent;
+//     outline-offset: 3px;
+// }
 
 // typography
 
@@ -58,11 +65,15 @@ h3 {
 .section__subtitle--about {
     background: $--clr-accent;
     font-family: $--ff-secondary;
+    padding: .25em 1em;
     margin-bottom: 1em;
 }
 
 
 // intro
+
+
+
 
 .intro {
     position: relative;
@@ -72,44 +83,67 @@ h3 {
     box-shadow: $--bs;
 }
 
+.section__subtitle--intro{
+    display: inline-block;
+}
+
+// home page- what i do
+
+.my-services {
+    background-color: $--clr-dark;
+    color: $--clr-light;
+    text-align: center;
+    
+}
+
+.section__title--services {
+    color: $--clr-accent;
+    position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 15%;
+            height: 1px;
+            margin: 0.5em auto 1em;
+            background: $--clr-light;
+        }
+}
 
 @media (min-width: 800px) {
-    body 
-         {$--fs-h1: 4.5rem;
-         $--fs-h2: 3.75rem;
-         $--fs-h3: 1.5rem;
-         $--fs-body: 1.125rem;
-     } }
- 
-     @media (min-width: 600px) {
-         .intro {
-             display: grid;
-             width: min-content;
-             margin: 0 auto;
-             grid-column-gap: 1em;
-             grid-template-areas: 
-                 "img title"
-                 "img subtitle";
-             grid-template-columns: min-content max-content;
-         }
-         
-         .intro__img {
-             grid-area: img;
-             min-width: 250px;
-             position: relative;
-             z-index: 5;
-         }    
-         
-         .section__subtitle--intro {
-             align-self: start;
-             grid-column: -1 / 1;
-             grid-row: 2;
-             text-align: right;
-             position: relative;
-             left: -1.5em;
-             width: calc(100% + 1.5em);
-         }
-     }
- 
+    .services {
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        margin: 0 auto;
+    }    
+
+    .service + .service {
+        margin-left: 2em;
+    }
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    margin-top: 50px;
+    background: $--clr-accent;
+    color: $--clr-dark;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: $--fw-reg;
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
 
 
