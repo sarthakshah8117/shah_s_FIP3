@@ -30,11 +30,12 @@ div[class^='tag-'] {
     // background: $--clr-dark;
 }
 
-#skills h1{ 
+#skills h2{ 
     
-    font-family: $--ff-secondary;
+    font-family: $--ff-primary;
     padding: .25em .6em;
-    margin-bottom: 1em;
+	margin-bottom: 1em;
+	margin-top: 1em;
 
 }
 

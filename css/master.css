@@ -186,6 +186,10 @@ h3 {
   text-align: center;
 }
 
+.service {
+  padding: 10px;
+}
+
 .section__title--services {
   color: #16e0bd;
   position: relative;
@@ -223,11 +227,10 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
-  transition: transform 200ms ease-in-out;
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .html {
@@ -253,10 +256,11 @@ div[class^=tag-] p {
   margin: 0 auto;
 }
 
-#skills h1 {
-  font-family: "Source Code Pro", monospace;
+#skills h2 {
+  font-family: "Source Sans Pro", sans-serif;
   padding: 0.25em 0.6em;
   margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .progressbar {
@@ -364,12 +368,99 @@ div[class^=bar-] {
   opacity: 0.5;
 }
 
+#contact .contact {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .contact-items {
+  width: 400px;
+}
+
+#contact .contact-item {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 0 #0000002c;
+  transition: 0.3s ease box-shadow;
+  cursor: pointer;
+}
+
+#contact .contact-item:hover {
+  box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+@media (min-width: 600px) {
+  #contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+
+  #contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  #contact .contact-item {
+    width: 30%;
+    margin: 0;
+    flex-direction: row;
+  }
+
+  #contact .contact-item .icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  #contact .contact-item .icon img {
+    object-fit: contain;
+  }
+
+  #contact .contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
 .footer {
-  background-color: #111;
+  background-color: #303030;
   color: #16e0bd;
   text-align: center;
-  padding: 2.5em 0;
-  font-size: 1.5rem;
+  padding: 0.5em;
+  font-size: 2.25rem;
+  margin-top: 100px;
 }
 
 .footer a {
@@ -385,7 +476,7 @@ div[class^=bar-] {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: auto;
   padding: 0;
 }
 
@@ -414,7 +505,7 @@ div[class^=bar-] {
 
   .intro__img {
     grid-area: img;
-    min-width: 300px;
+    min-width: 400px;
     position: relative;
     z-index: 5;
   }

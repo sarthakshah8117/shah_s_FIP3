@@ -1,5 +1,5 @@
 @media (min-width: 800px) {
-  :root
+  body
         {$--fs-h1: 4.5rem;
         $--fs-h2: 3.75rem;
         $--fs-h3: 5rem;
@@ -27,7 +27,7 @@
         
         .intro__img {
             grid-area: img;
-            min-width: 300px;
+            min-width: 400px;
             position: relative;
             z-index: 5;
         }    
@@ -43,6 +43,41 @@
             font-size: $--fs-h3;
             font-weight: $--fw-bold;
         }
+
+
+
+        
+	// #contact .contact {
+	// 	flex-direction: column;
+	// 	padding: 100px 0;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	min-width: 20vh;
+	// }
+	// #contact .contact-items {
+	// 	width: 100%;
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	justify-content: space-evenly;
+	// 	margin: 0;
+	// }
+	// #contact .contact-item {
+	// 	width: 30%;
+	// 	margin: 0;
+	// 	flex-direction: row;
+	// }
+	// #contact .contact-item .icon {
+	// 	height: 100px;
+	// 	width: 100px;
+	// }
+	// #contact .contact-item .icon img {
+	// 	object-fit: contain;
+	// }
+	// #contact .contact-item .contact-info {
+	// 	width: 100%;
+	// 	text-align: left;
+	// 	padding-left: 20px;
+	// }
     }
 
 

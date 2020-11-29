@@ -81,6 +81,7 @@ h3 {
 
 .intro__img {
     box-shadow: $--bs;
+    
 }
 
 .section__subtitle--intro{
@@ -94,6 +95,10 @@ h3 {
     color: $--clr-light;
     text-align: center;
     
+}
+
+.service {
+    padding: 10px; 
 }
 
 .section__title--services {
@@ -137,12 +142,13 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: $--fw-reg;
-    transition: transform 200ms ease-in-out;
+    // transition: transform 200ms ease-in-out;
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    opacity: .8;
 }
+
 
 
 
