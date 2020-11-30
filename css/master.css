@@ -327,6 +327,7 @@ div[class^=bar-] {
     grid-area: img;
     position: relative;
     z-index: 2;
+    min-width: 300px;
   }
 }
 .my-work {
