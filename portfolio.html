@@ -6,7 +6,9 @@
 	<title>SARTHAK | PORTFOLIO</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-    <link rel="stylesheet" href="css/master.css">
+	<link rel="stylesheet" href="css/master.css">
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 
 </head>
@@ -30,43 +32,27 @@
     </header>
 
     <!-- portfolio-->
-    <section class="my-work">
-        <h2 class="section__title section__title--work">My Work</h2>
-        <p class="section__subtitle section__subtitle--work"> A Selection of my range of work</p>
-
-        <div class="portfolio">
-            <!-- Portfolio item 01 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/portfolio.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- Portfolio item 02 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/portfolio.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- Portfolio item 03 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/portfolio.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- Portfolio item 04 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/portfolio.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- Portfolio item 05 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/portfolio.jpg" alt="" class="portfolio__img">
-            </a>
-            
-            <!-- Portfolio item 06 -->
-            <a href="#" class="portfolio__item">
-                <img src="images/portfolio.jpg" alt="" class="portfolio__img">
-            </a>
+	
+	<main id="app">
+        <!-- <img src="images/car.png"> -->
+        <div class="title">
+            Click on Cooper Below to know more
         </div>
-    </section>
-    
+        <section class="container">
+            <div class="carContent hideContent" :class="{'show-data' : show_data}">
+                
+                <h2>{{ currentModelData.name}}</h2>
+                <p>{{ currentModelData.about}}</p>
+                <img :src="'images/' + currentModelData.image" alt="">
+            </div>
+            <div class="thumbnails">
+                <thumbnail-card @showmydata="carThumbSelected" v-for="item in carModels" :item="item" :key="item.id"></thumbnail-card>
+            </div>
+
+            
+        </section>
+        
+    </main>
     <!-- footer -->
 	<footer class="footer">
 		<ul class="sociallist">
@@ -95,6 +81,10 @@
 			</li>	
 		</ul>
 	</footer>
+</body>
+<script src="js/main.js"></script>
+	<!-- <script src="js/Hamburger.js"></script> -->
 	
-	<script src="js/main.js"></script>
-    </body>
+
+</html>
+    
