@@ -54,8 +54,21 @@ header {
     cursor: pointer;
     position: absolute;
     right: 3em;
-    top: 3em; //edit for position of hamburger
+    top: 2em; //edit for position of hamburger
     z-index: 1000;
+}
+
+@media (min-width: 600px) {
+    .nav-toggle {
+        padding: .25em;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        position: absolute;
+        right: 3em;
+        top: 3em; //edit for position of hamburger
+        z-index: 1000;
+    }
 }
 
 .nav-open .nav{

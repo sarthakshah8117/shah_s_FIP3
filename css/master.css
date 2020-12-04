@@ -35,7 +35,7 @@ header {
 .nav_link {
   color: inherit;
   font-weight: 900;
-  font-size: 2.25rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -50,10 +50,22 @@ header {
   cursor: pointer;
   position: absolute;
   right: 3em;
-  top: 3em;
+  top: 2em;
   z-index: 1000;
 }
 
+@media (min-width: 600px) {
+  .nav-toggle {
+    padding: 0.25em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 3em;
+    top: 3em;
+    z-index: 1000;
+  }
+}
 .nav-open .nav {
   transform: translateX(0);
 }
@@ -133,11 +145,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -149,10 +161,13 @@ h3 {
 }
 
 .section__title--intro {
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
+  margin-top: 30px;
 }
 .section__title--intro strong {
   display: block;
+  margin-top: 15px;
 }
 
 .section__subtitle {
@@ -160,24 +175,24 @@ h3 {
   font-size: 1.5rem;
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--intro {
   background: #16e0bd;
   font-family: "Source Code Pro", monospace;
   padding: 0.25em 1em;
-  margin-bottom: 1em;
+  text-align: center;
+  font-weight: 900;
 }
 
 .intro {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro__img {
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
-}
-
-.section__subtitle--intro {
-  display: inline-block;
+  max-width: 300px;
 }
 
 .my-services {
@@ -203,7 +218,35 @@ h3 {
   background: #fff;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas: "img title" "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 400px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
   .services {
     display: flex;
     flex-direction: row;
@@ -213,6 +256,16 @@ h3 {
 
   .service + .service {
     margin-left: 2em;
+  }
+
+  .section__title--intro {
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .section__title--intro strong {
+    display: block;
+    margin-top: 15px;
   }
 }
 .btn {
@@ -237,7 +290,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  padding-left: 35px;
+  padding-left: 25px;
 }
 
 div[class^=tag-] {
@@ -254,6 +307,7 @@ div[class^=tag-] p {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 2em;
 }
 
 #skills h2 {
@@ -263,6 +317,10 @@ div[class^=tag-] p {
   margin-top: 1em;
 }
 
+.skills-info {
+  margin: 1.5em;
+}
+
 .progressbar {
   position: relative;
   width: 700px;
@@ -270,6 +328,7 @@ div[class^=tag-] p {
   border: 2px solid #16e0bd;
   border-radius: 20px;
   margin-top: 18px;
+  margin-right: 2em;
 }
 
 div[class^=bar-] {
@@ -292,19 +351,86 @@ div[class^=bar-] {
   width: 75%;
 }
 
+@media (min-width: 900px) {
+  .html {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding-left: 25px;
+  }
+
+  div[class^=tag-] {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 100%, 0% 50%, 0% 0%);
+    width: 120px;
+    background-color: #303030;
+    margin-right: 30px;
+  }
+  div[class^=tag-] p {
+    color: #fff;
+    margin-left: 20px;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  #skills h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 0.25em 0.6em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .skills-info {
+    margin: 1em;
+  }
+
+  .progressbar {
+    position: relative;
+    width: 700px;
+    height: 25px;
+    border: 2px solid #16e0bd;
+    border-radius: 20px;
+    margin-top: 18px;
+    margin-right: 2em;
+  }
+
+  div[class^=bar-] {
+    position: relative;
+    background-color: #16e0bd;
+    height: 10px;
+    border-radius: 20px;
+    margin: 5px;
+  }
+}
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section__subtitle--about {
+  background: #16e0bd;
+  font-family: "Source Code Pro", monospace;
+  padding: 0.25em 1em;
+  font-weight: 900;
+}
+
+.about-me__body {
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 .about-me__img {
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  max-width: 300px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 200px;
     grid-template-areas: "title img" "subtitle img" "text img";
     grid-column-gap: 2em;
   }
@@ -327,7 +453,6 @@ div[class^=bar-] {
     grid-area: img;
     position: relative;
     z-index: 2;
-    min-width: 300px;
   }
 }
 .my-work {
@@ -376,7 +501,9 @@ div[class^=bar-] {
 }
 
 #contact .contact-items {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact .contact-item {
@@ -417,7 +544,7 @@ div[class^=bar-] {
   font-weight: 500;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1100px) {
   #contact .contact {
     flex-direction: column;
     padding: 100px 0;
@@ -460,8 +587,7 @@ div[class^=bar-] {
   color: #16e0bd;
   text-align: center;
   padding: 0.5em;
-  font-size: 2.25rem;
-  margin-top: 100px;
+  font-size: 2rem;
 }
 
 .footer a {
@@ -493,34 +619,6 @@ div[class^=bar-] {
   .logo {
     max-width: 200px;
     padding-left: 3em;
-  }
-
-  .intro {
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap: 1em;
-    grid-template-areas: "img title" "img subtitle";
-    grid-template-columns: min-content max-content;
-  }
-
-  .intro__img {
-    grid-area: img;
-    min-width: 400px;
-    position: relative;
-    z-index: 5;
-  }
-
-  .section__subtitle--intro {
-    align-self: start;
-    grid-column: -1/1;
-    grid-row: 2;
-    text-align: right;
-    position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
-    font-size: 1.5rem;
-    font-weight: 900;
   }
 }
 *,
