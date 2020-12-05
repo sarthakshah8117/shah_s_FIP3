@@ -1,4 +1,5 @@
 import { fetchData, postData } from "./components/TheDataMiner.js";
+
 (() => {
 // Hamburger menu
     const navToogle = document.querySelector('.nav-toggle');
@@ -14,6 +15,7 @@ navLinks.forEach(link => {
     })
 })
 // end of hamburger menu
+
 
 
 
