@@ -455,45 +455,158 @@ div[class^=bar-] {
     z-index: 2;
   }
 }
-.my-work {
-  background-color: #303030;
-  color: #fff;
+#app {
+  margin: 0 auto;
+  display: block;
+  max-width: 1200px;
+  padding: 10px;
   text-align: center;
 }
 
-.section__subtitle--work {
-  color: #16e0bd;
-  font-weight: 900;
-  margin-bottom: 2em;
+.Carcontainer {
+  padding: 10px;
+  margin-top: -50px;
 }
 
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  max-width: 1000px;
-  margin: 0 auto;
+.title {
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-@media (min-width: 800px) {
-  .portfolio {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.carContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.carContent h2 {
+  margin: 15px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.carContent p {
+  margin: 15px;
+  margin-top: 15px;
+}
+.carContent img {
+  width: 100px;
+  align-self: center;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.thumbnails img {
+  width: 100px;
+  opacity: 1;
+}
+.thumbnails img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  background: #676470;
+  transition: all 0.5s ease;
+  transform: scale(1.01);
+}
+
+@media (min-width: 470px) {
+  .thumbnails img {
+    width: 150px;
+  }
+
+  .carContent img {
+    width: 150px;
   }
 }
-.portfolio__item {
-  background: #16e0bd;
-  overflow: hidden;
-}
+@media (min-width: 650px) {
+  .thumbnails img {
+    width: 200px;
+  }
 
-.portfolio__img {
-  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1);
-  opacity: 250ms linear;
-}
-.portfolio__img:hover {
-  transform: scale(1.2);
-  opacity: 0.5;
-}
+  .carContent img {
+    width: 200px;
+  }
+  .carContent h2 {
+    margin: 20px;
+    font-size: 35px;
+    font-weight: 800;
+    margin-top: 80px;
+  }
+  .carContent p {
+    margin: 20px;
+    font-size: 20px;
+    width: 60%;
+    align-self: center;
+  }
 
+  .title {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1000px) {
+  .thumbnails img {
+    width: 300px;
+  }
+
+  .carContent img {
+    width: 300px;
+  }
+  .carContent p {
+    margin: 25px;
+    font-size: 25px;
+    width: 70%;
+    align-self: center;
+  }
+}
+@media (min-width: 1280px) {
+  .thumbnails img {
+    width: 300px;
+  }
+
+  .carContent img {
+    width: 300px;
+  }
+  .carContent p {
+    margin: 30px;
+    font-size: 30px;
+    width: 80%;
+    align-self: center;
+  }
+}
+@media (min-width: 1400px) {
+  .thumbnails img {
+    width: 400px;
+  }
+
+  .carContent img {
+    width: 400px;
+  }
+  .carContent h2 {
+    margin: 20px;
+    font-size: 45px;
+    font-weight: 900;
+    margin-top: 80px;
+  }
+  .carContent p {
+    margin: 35px;
+    font-size: 35px;
+    width: 90%;
+    align-self: center;
+  }
+
+  .title {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
 #contact .contact {
   flex-direction: column;
   max-width: 1200px;

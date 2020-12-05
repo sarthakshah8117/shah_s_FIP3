@@ -1,0 +1,203 @@
+
+
+#app {
+    margin: 0 auto;
+    display: block;
+    max-width: 1200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.Carcontainer {
+    padding: 10px;
+    margin-top: -50px;
+}
+
+.title {
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.carContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+   
+    h2 {
+        margin: 15px;
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+
+    p {
+        margin: 15px;
+        // width: 100%;
+        margin-top: 15px;
+    }
+
+    img {
+        width: 100px;
+        align-self: center;
+    }
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    // max-width: 600px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+
+    img {
+        width: 100px;
+        opacity: 1;
+    }
+
+    img:hover{
+        cursor: pointer;
+        opacity: 0.7;
+        background:#676470;
+            transition:all 0.5s ease;
+            transform: scale(1.01);
+    }
+
+    
+}
+
+@media (min-width: 470px) {
+    .thumbnails {
+        img {
+            width: 150px;
+        }
+    }
+
+    .carContent {
+        img {
+            width: 150px;
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .thumbnails {
+        img {
+            width: 200px;
+        }
+    }
+
+    .carContent {
+        img {
+            width: 200px;
+        }
+
+        h2 {
+            margin: 20px;
+            font-size: 35px;
+            font-weight: 800;
+            margin-top: 80px;
+        }
+       
+        p {
+            margin: 20px;
+            font-size: 20px;
+            // width: 100%;
+            width: 60%;
+            align-self: center;
+        }
+    }
+
+    .title {
+        margin-top: 100px;
+        font-size: 30px;
+        font-weight: 400;
+        
+    }
+}
+
+@media (min-width: 1000px) {
+    .thumbnails {
+        img {
+            width: 300px;
+        }
+    }
+
+    .carContent {
+        img {
+            width: 300px;
+        }
+        p {
+            margin: 25px;
+            font-size: 25px;
+            width: 70%;
+            align-self: center;
+        }
+    }
+
+    
+}
+
+@media (min-width: 1280px) {
+    .thumbnails {
+        img {
+            width: 300px;
+        }
+    }
+
+    .carContent {
+        img {
+            width: 300px;
+        }
+
+        p {
+            margin: 30px;
+            font-size: 30px;
+            width: 80%;
+            align-self: center;
+        }
+    }
+    
+    
+}
+
+@media (min-width: 1400px) {
+    .thumbnails {
+        img {
+            width: 400px;
+            
+        }
+    }
+
+    .carContent {
+        img {
+            width: 400px;
+        }
+        h2 {
+            margin: 20px;
+            font-size: 45px;
+            font-weight: 900;
+            margin-top: 80px;
+        }
+       
+        p {
+            margin: 35px;
+            font-size: 35px;
+            // width: 100%;
+            width: 90%;
+            align-self: center;
+        }
+    }
+    .title {
+        margin-top: 100px;
+        font-size: 40px;
+        font-weight: 500;
+        
+    }
+    
+    
+}

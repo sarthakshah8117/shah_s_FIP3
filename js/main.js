@@ -19,6 +19,8 @@ navLinks.forEach(link => {
 
 
 
+
+
 // vue bgins
     Vue.component("thumbnail-card",{
         props: ["item"],
