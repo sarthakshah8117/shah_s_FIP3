@@ -35,9 +35,10 @@
 	
 	<main id="app">
         <!-- <img src="images/car.png"> -->
-        <div class="title">
-            Click on Image below to know more
-        </div>
+        <div class="title" v-show="removeAFormat">
+            <h2>{{message}}</h2>
+		</div>
+		
         <section class="Carcontainer">
             <div class="carContent hideContent" :class="{'show-data' : show_data}">
                 
@@ -47,7 +48,8 @@
             </div>
             <div class="thumbnails">
                 <thumbnail-card @showmydata="carThumbSelected" v-for="item in carModels" :item="item" :key="item.id"></thumbnail-card>
-            </div>
+			</div>
+			
 
             
         </section>

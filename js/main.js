@@ -45,9 +45,9 @@ navLinks.forEach(link => {
         //el: "#app",
 
         data: {
-            message: "Hello from Vue!",
-            anotherMessage: "more text, so simple! much winning",
-            // removeAformat: true,
+            message: "Click on image below to know more",
+            
+            removeAFormat: true,
             show_data: false,
             carModels: [],
             currentModelData: {}
@@ -70,7 +70,9 @@ navLinks.forEach(link => {
             carThumbSelected(item){
                 console.log("clicked on a list item: ", item.name);
                 this.show_data = this.show_data ? false : true;
+                this.removeAFormat = false;
                 this.currentModelData = item;
+                
             }
            
 
