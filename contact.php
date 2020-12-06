@@ -7,6 +7,7 @@
 	<title>SARTHAK | PORTFOLIO</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+	<link rel="shortcut icon" type="image/jpg" href="images/logo_portfolio.jpg">
 	
 	<link rel="stylesheet" href="css/master.css">
 
@@ -27,15 +28,16 @@
 				<li class="nav__item"><a href="index.html" class="nav_link">Home</a></li>
 				<li class="nav__item"><a href="About.html" class="nav_link">About me</a></li>
 				<li class="nav__item"><a href="portfolio.html" class="nav_link">Portfolio</a></li>
-				<li class="nav__item"><a href="contact.php" class="nav_link">Conatct me</a></li>
-
+				<li class="nav__item"><a href="#" class="nav_link">Conatct me</a></li>
 			</ul>
 		</nav>
 	</header>
 
-    <!-- Form -->
+	<!-- Form -->
+	<div class="contactContainer">
     <div class="contactContainer">
 		<h1>Lets Get In Touch</h1>
+		<p>Fill up the information below</p>
         
             <form action="<?= $_SERVER['PHP_SELF'];?>" method="POST">
                 <input type="text" name="name" value="<?= $name ?>" placeholder="Enter Your Name" ><br><br>

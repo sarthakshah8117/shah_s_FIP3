@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-![project image](images/readme.jpg)
+![project image](images/readme.png)
 
 > FRONT END WEB DEVELOPER
 ---

@@ -24,6 +24,11 @@
     max-width: 300px;
 }
 
+.buttons {
+    text-align: center;
+    margin-top: -50px;
+}
+
 
 @media (min-width: 900px) {
     .about-me {
@@ -52,5 +57,10 @@
         position: relative;
         z-index: 2;
         // min-width: 300px;
+    }
+
+
+    .about-me__img:hover {
+        box-shadow: 0px 0px 5px 0 #0000002c;
     }
 }
