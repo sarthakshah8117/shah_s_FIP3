@@ -1,0 +1,142 @@
+.html {
+	display: flex;
+	flex-wrap: wrap;
+	// justify-content: center;
+    margin-bottom: 40px;
+    padding-left: 25px;
+}
+
+div[class^='tag-'] {
+	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 100%, 0% 50%, 0% 0% );
+	width: 120px;
+	// height: 30px;
+	background-color: $--clr-dark;
+	margin-right: 30px;
+
+	p{
+		color: #fff;
+		// text-align: center;
+		// padding-left: 5px;
+		// font-size: 1.1rem;
+        // padding-top: 0px;
+        margin-left: 20px;
+		
+	}
+}
+
+.container {
+    max-width: 1000px;
+	margin: 0 auto;
+	padding: 2em;
+	// background: $--clr-dark;
+}
+	
+
+#skills h2{ 
+    
+    font-family: $--ff-primary;
+    padding: .25em .6em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+}
+
+.skills-info {
+    margin: 1.5em;
+}
+
+.progressbar {
+	position: relative;
+	width: 700px;
+	height: 25px;
+	border: 2px solid  $--clr-accent;
+	border-radius: 20px;
+	margin-top: 18px;
+	margin-right: 2em;
+}
+
+div[class^='bar-'] {
+	position: relative;
+	background-color: $--clr-accent;
+	height: 10px;
+	border-radius: 20px;
+	margin: 5px;
+}
+
+.bar-html {
+    width: 95%;
+}
+.bar-css {
+    width: 90%;
+}
+.bar-javascript{
+    width: 75%;
+}
+
+
+@media (min-width:900px ) {
+	.html {
+		display: flex;
+		flex-wrap: wrap;
+		// justify-content: center;
+		margin-bottom: 40px;
+		padding-left: 25px;
+	}
+	
+	div[class^='tag-'] {
+		clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 100%, 0% 50%, 0% 0% );
+		width: 120px;
+		// height: 30px;
+		background-color: $--clr-dark;
+		margin-right: 30px;
+	
+		p{
+			color: #fff;
+			// text-align: center;
+			// padding-left: 5px;
+			// font-size: 1.1rem;
+			// padding-top: 0px;
+			margin-left: 20px;
+			
+		}
+	}
+	
+	.container {
+		// max-width: 900px;
+		margin: 0 auto;
+		// background: $--clr-dark;
+		// padding: 2em;
+	}
+		
+	
+	#skills h2{ 
+		
+		font-family: $--ff-primary;
+		padding: .25em .6em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	
+	}
+	
+	.skills-info {
+		margin: 1em;
+	}
+	
+	.progressbar {
+		position: relative;
+		width: 700px;
+		height: 25px;
+		border: 2px solid  $--clr-accent;
+		border-radius: 20px;
+		margin-top: 18px;
+		margin-right: 2em;
+	}
+	
+	div[class^='bar-'] {
+		position: relative;
+		background-color: $--clr-accent;
+		height: 10px;
+		border-radius: 20px;
+		margin: 5px;
+	}
+}
