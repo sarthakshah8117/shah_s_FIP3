@@ -34,7 +34,8 @@
 	</header>
 
     <!-- Form -->
-    <div class="contactCon">
+    <div class="contactContainer">
+		<h1>Lets Get In Touch</h1>
         
             <form action="<?= $_SERVER['PHP_SELF'];?>" method="POST">
                 <input type="text" name="name" value="<?= $name ?>" placeholder="Enter Your Name" ><br><br>
@@ -46,14 +47,16 @@
                 <input type="text" name="subject" value="<?= $subject ?>" placeholder="Subject"><br><br>
                 <span style='color:red'><?= $subject_error ?></span>
 
-                <textarea rows="15" cols="25" name="message" value="<?= $message ?>" placeholder="Your Message"></textarea>
+                <textarea rows="10" cols="25" name="message" value="<?= $message ?>" placeholder="Your Message"></textarea>
                 <span style='color:red'><?= $message_error ?></span>
 
-                <button class="but but1" type="submit">SUBMIT</button>
-                <span style='color:green;'></span>
+                <button class="but" type="submit">SUBMIT</button>
+                <span style='color:green;'><?= $success ?></span>
             </form>
         </div>
 		<!-- Form -->
+
+		
 		
 		
 	<!-- footer -->

@@ -14,7 +14,7 @@
 
 ## Description
 
-This is my portfolio piece. It is assigned as course Final Integrated Project fall, 2020. This is my identity where i have displayed my work and skills. The link below will drive through the steps that are followed.  
+This is my portfolio piece. It is assigned as course Final Integrated Project fall, 2020. This is my identity where i have displayed my work and skills. The link below will drive through the steps that are followed to complete this project.  
 
 [Roadmap](https://docs.google.com/document/d/1YL0Rwm_6ZIpF-uMk887ElBv_TaUnrZ1gJTBQC7985Xc/edit)
 
@@ -34,7 +34,7 @@ Following are the softwares which i have used to designed elements of portfolio 
 - SASS
 - AJAX
 - Vue
-- SQL, MYSQL
+- MYSQL
 - PHP
 
 ---

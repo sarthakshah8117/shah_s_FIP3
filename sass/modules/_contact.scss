@@ -1,0 +1,65 @@
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1900px;
+    height: 100vh;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    margin: 50px;
+    
+
+    input {
+        width: 100%;
+        margin: 10px;
+        height: 40px;
+        border: 1;
+        border: 1px thin black;
+        border-radius: 5px
+    
+    }
+
+    textarea {
+        margin: 10px;
+        border: 1px thin black;
+        border-radius: 5px;
+    }
+    }
+  
+  .but {
+    margin: 10px;
+      height: 50px;
+      width:  100px;
+      align-self: center;
+  }
+
+
+  @media (min-width: 700px) {
+      form {
+    input {
+        width: 100%;
+        width: 500px;
+        height: 40px;
+        border: 1;
+        border: 1px thin black;
+        border-radius: 5px
+    }
+    }
+
+    .but {
+        margin: 10px;
+          height: 50px;
+          width:  200px;
+          align-self: center;
+      }
+
+
+}
