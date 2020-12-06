@@ -15,9 +15,9 @@
 </head>
 <body>
 	
-<header>
+	<header>
 		<div class="logo">
-			<img src="images/logo_portfolio.jpg" alt="">
+			<img src="images/logo_portfolio.jpg" alt="logo">
 		</div>
 		<button class="nav-toggle" aria-label="toogle navigation">
 			<span class="hamburger"></span>
@@ -35,28 +35,30 @@
 
 	<!-- Form -->
 	<div class="contactContainer">
-    <div class="contactContainer">
 		<h1>Lets Get In Touch</h1>
 		<p>Fill up the information below</p>
-        
-            <form action="<?= $_SERVER['PHP_SELF'];?>" method="POST">
-                <input type="text" name="name" value="<?= $name ?>" placeholder="Enter Your Name" ><br><br>
-                <span style='color:red'><?= $name_error ?></span>
 
-                <input type="email" name="email" value="<?= $email ?>" placeholder="Enter Your E-mail"><br><br>
-                <span style='color:red'><?= $email_error ?></span>
+			
+				
+			<form action="<?= $_SERVER['PHP_SELF'];?>" method="POST">
+				<input type="text" name="name" value="<?= $name ?>" placeholder="Enter Your Name"><br> 
+				<span style='color:red'><?= $name_error ?></span>
 
-                <input type="text" name="subject" value="<?= $subject ?>" placeholder="Subject"><br><br>
-                <span style='color:red'><?= $subject_error ?></span>
+				<input type="email" name="email" value="<?= $email ?>" placeholder="Enter Your Email"><br> 
+				<span style='color:red'><?= $email_error ?></span>
 
-                <textarea rows="10" cols="25" name="message" value="<?= $message ?>" placeholder="Your Message"></textarea>
-                <span style='color:red'><?= $message_error ?></span>
+				<input type="text" name="subject" value="<?= $subject ?>" placeholder="Subject"><br> 
+				<span style='color:red'><?= $subject_error ?></span>
 
-                <button class="but" type="submit">SUBMIT</button>
-                <span style='color:green;'><?= $success ?></span>
-            </form>
-        </div>
-		<!-- Form -->
+				<textarea row="10" cols="25" name="message" value="<?= $message ?>" placeholder="Your Message"></textarea>
+				<span style='color:red'><?= $message_error ?> </span>
+
+				<button class="but" type="submit"> SUBMIT</button>
+				<span style='color:green;'> <?= $success ?></span>
+			</form>
+	</div>       
+     
+	
 
 		
 		
